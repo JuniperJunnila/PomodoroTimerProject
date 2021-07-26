@@ -1,0 +1,35 @@
+.btn-play {
+  background-color: #11a777;
+  color: #392d31;
+  border-color: #392d31;
+  box-shadow: none;
+}
+
+.btn-play:hover,
+.btn-play:focus {
+  background-color: #14CC92;
+  color: #392d31;
+  border-color: #392d31;
+}
+
+.btn-stop {
+  background-color: #067432;
+  color: #b7cece;
+  border-color: #073b3a;
+  box-shadow: none;
+}
+
+.btn-stop:hover,
+.btn-stop:focus {
+  background-color: #08a045;
+  color: #b7cece;
+  border-color: #073b3a;
+}
+
+.btn-stop:active,
+.btn-stop:active:focus,
+.btn-stop.active {
+  background-color: #067432;
+  color: #b7cece;
+  border-color: #073b3a;
+}

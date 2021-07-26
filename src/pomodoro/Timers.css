@@ -1,0 +1,26 @@
+.btn-timer {
+  background-color: #044e21;
+  color: #b7cece;
+  border-color: #392D31;
+  box-shadow: none;
+}
+
+.btn-timer:hover,
+.btn-timer:focus {
+  background-color: #08a045;
+  color: #b7cece;
+  border-color: #073b3a;
+}
+
+.btn-timer:active,
+.btn-timer:active:focus,
+.btn-timer.active {
+  background-color: #067432;
+  color: #b7cece;
+  border-color: #073b3a;
+}
+
+.input-group-text {
+  background-color: #b7cece;
+  color: #324949;
+}
