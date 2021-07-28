@@ -162,7 +162,6 @@ function Pomodoro() {
         </div>
       </div>
       <div>
-        {/* TODO(DONE): This area should show only when there is an active focus or break - i.e. the session is running or is paused */}
         <ProgressBar session={session} duration={duration} />
       </div>
     </div>

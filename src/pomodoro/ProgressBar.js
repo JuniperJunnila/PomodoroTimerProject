@@ -17,11 +17,9 @@ const ProgressBar = ({ session, duration }) => {
     <>
       <div className="row mb-2">
         <div className="col">
-          {/* TODO(DONE): Update message below to include current session (Focusing or On Break) total duration */}
           <h2 data-testid="session-title">
             {session?.label} for {session?.label === 'Focusing' ? focusDuration : breakDuration} minutes
           </h2>
-          {/* TODO(DONE): Update message below correctly format the time remaining in the current session */}
           <p className="lead" data-testid="session-sub-title">
             {`${minutes}:${seconds}`} remaining
           </p>
@@ -35,8 +33,8 @@ const ProgressBar = ({ session, duration }) => {
               role="progressbar"
               aria-valuemin="0"
               aria-valuemax="100"
-              aria-valuenow={timePercent} // TODO(DONE): Increase aria-valuenow as elapsed time increases
-              style={{ width: `${timePercent}%` }} // TODO(DONE): Increase width % as elapsed time increases
+              aria-valuenow={timePercent}
+              style={{ width: `${timePercent}%` }}
             />
           </div>
         </div>

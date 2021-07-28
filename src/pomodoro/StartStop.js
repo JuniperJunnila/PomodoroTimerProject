@@ -23,8 +23,6 @@ const StartStop = ({ playPause, classNames, isTimerRunning, session, handler }) 
           })}
         />
       </button>
-      {/* TODO(DONE): Implement stopping the current focus or break session. and disable the stop button when there is no active session */}
-      {/* TODO(DONE): Disable the stop button when there is no active session */}
       <button
         type="button"
         className="btn btn-stop"
