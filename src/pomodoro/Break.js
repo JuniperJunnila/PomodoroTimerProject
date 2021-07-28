@@ -3,12 +3,13 @@ import "./Timers.css";
 
 const BreakDuration = ({ duration, handler, session }) => {
   const { breakDuration } = duration;
+  const front0 = breakDuration < 10 ? '0' : ''
   return (
     <div className="float-right">
       <div className="input-group input-group-lg mb-2">
         <span className="input-group-text" data-testid="duration-break">
           {/* TODO(DONE): Update this text to display the current break session duration */}
-          Break Duration: {breakDuration}:00
+          Break Duration: {front0}{breakDuration}:00
         </span>
         <div className="input-group-append">
           {/* TODO(DONE): Implement decreasing break duration and disable during a focus or break session*/}

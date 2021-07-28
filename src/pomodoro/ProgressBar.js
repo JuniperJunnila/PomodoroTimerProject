@@ -10,6 +10,8 @@ const ProgressBar = ({ session, duration }) => {
   let seconds = session?.timeRemaining-(minutes*60)
   seconds = seconds === 0 ? seconds = '00' : seconds
   seconds = (seconds < 10 && seconds > 0) ? seconds = '0' + seconds : seconds
+  const focusDuration = duration.focusDuration < 10 ? `0${duration.focusDuration.toString()}:00` : `${duration.focusDuration.toString()}:00`
+  const breakDuration = duration.breakDuration < 10 ? `0${duration.breakDuration.toString()}:00` : `${duration.breakDuration.toString()}:00`
 
   return (
     <>
@@ -17,7 +19,7 @@ const ProgressBar = ({ session, duration }) => {
         <div className="col">
           {/* TODO(DONE): Update message below to include current session (Focusing or On Break) total duration */}
           <h2 data-testid="session-title">
-            {session?.label} for {minutes + ':00'} minutes
+            {session?.label} for {session?.label === 'Focusing' ? focusDuration : breakDuration} minutes
           </h2>
           {/* TODO(DONE): Update message below correctly format the time remaining in the current session */}
           <p className="lead" data-testid="session-sub-title">

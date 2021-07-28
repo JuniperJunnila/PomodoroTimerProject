@@ -3,11 +3,12 @@ import "./Timers.css";
 
 const FocusDuration = ({ duration, handler, session }) => {
   const { focusDuration } = duration;
+  const front0 = focusDuration < 10 ? '0' : ''
   return (
     <div className="input-group input-group-lg mb-2">
       <span className="input-group-text" data-testid="duration-focus">
         {/* TODO(DONE): Update this text to display the current focus session duration */}
-        Focus Duration: {focusDuration}:00
+        Focus Duration: {front0}{focusDuration}:00
       </span>
       <div className="input-group-append">
         {/* TODO(DONE): Implement decreasing focus duration and disable during a focus or break session */}
