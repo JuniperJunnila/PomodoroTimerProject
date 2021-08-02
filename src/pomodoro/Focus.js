@@ -1,5 +1,5 @@
 import React from "react";
-import "./Timers.css";
+//import "./Timers.css";
 
 const FocusDuration = ({ duration, handler, session }) => {
   const { focusDuration } = duration;

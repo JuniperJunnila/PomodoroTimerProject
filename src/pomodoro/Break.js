@@ -1,5 +1,5 @@
 import React from "react";
-import "./Timers.css";
+//import "./Timers.css";
 
 const BreakDuration = ({ duration, handler, session }) => {
   const { breakDuration } = duration;

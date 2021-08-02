@@ -1,5 +1,5 @@
 import React from "react";
-import "./StartStop.css";
+//import "./StartStop.css";
 
 const StartStop = ({ playPause, classNames, isTimerRunning, session, handler }) => {
   return (
